@@ -19,6 +19,9 @@ jobs:
     - name: Clean up intermediate files
       run: |
         rm -rf *-amd64.tar *.tar.gz
+        df -h
+        echo "===================================="
+        ls -l
   
     - name: Pull Docker Images and Package
       run: |
