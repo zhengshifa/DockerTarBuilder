@@ -26,9 +26,6 @@ jobs:
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         rm -rf *-amd64.tar *.tar.gz
-        df -h
-        echo "===================================="
-        du -sh /*
   
     - name: Pull Docker Images and Package
       run: |
