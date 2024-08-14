@@ -21,7 +21,7 @@ jobs:
         rm -rf *-amd64.tar *.tar.gz
         df -h
         echo "===================================="
-        ls -l
+        du -sh /*
   
     - name: Pull Docker Images and Package
       run: |
