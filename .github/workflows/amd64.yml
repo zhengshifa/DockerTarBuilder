@@ -18,6 +18,7 @@ jobs:
 
     - name: Clean up intermediate files
       run: |
+        docker rmi `docker images -q`
         rm -rf *-amd64.tar *.tar.gz
         df -h
         echo "===================================="
